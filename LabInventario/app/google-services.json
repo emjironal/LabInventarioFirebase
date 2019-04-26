@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "717591964237",
+    "firebase_url": "https://labinventario-6a330.firebaseio.com",
+    "project_id": "labinventario-6a330",
+    "storage_bucket": "labinventario-6a330.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717591964237:android:f00c7de66b74c3e9",
+        "android_client_info": {
+          "package_name": "com.example.labinventario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717591964237-tciaq2rvoir4ul34c2k1d51036k1g54q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWy7eaO3Cuc40Xv_39tGGXjoBMrn8xnEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717591964237-tciaq2rvoir4ul34c2k1d51036k1g54q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
