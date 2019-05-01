@@ -13,10 +13,26 @@ public class GestorFirebaseDB
 {
     private GestorFirebaseDB(){}
 
-    public static void deleteObject()
+    public static void deleteObject(String id, String collection, final Activity activity)
     {
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+        db.collection(collection).document(id).delete()
+        .addOnSuccessListener(activity, new OnSuccessListener<Void>()
+        {
+            @Override
+            public void onSuccess(Void aVoid)
+            {
+                PrintMessage.printMessage(activity, "DeleteObject", "Se eliminó");
+            }
+        })
+        .addOnFailureListener(activity, new OnFailureListener()
+        {
+            @Override
+            public void onFailure(@NonNull Exception e)
+            {
+                PrintMessage.printMessage(activity, "DeleteObject", "No se eliminó");
+            }
+        });
     }
 
     /**

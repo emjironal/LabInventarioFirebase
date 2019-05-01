@@ -6,43 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnSelectImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="352dp"
-        android:text="Seleccionar imagen"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnInsertarProducto"
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_blue_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgVistaPrevia"
-        app:layout_constraintVertical_bias="0.0"
-        android:onClick="openGallery"/>
+        android:onClick="btnInsertarProductoListener"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
-    <ImageView
-        android:id="@+id/imgVistaPrevia"
-        android:layout_width="233dp"
-        android:layout_height="248dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher_round" />
-
-    <Button
-        android:id="@+id/btnAgregarProducto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Agregar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSelectImage"
-        app:layout_constraintVertical_bias="0.963"
-        android:onClick="btnAgregarProductoListener"/>
+    <ListView
+        android:id="@+id/listProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="7dp" />
 </android.support.constraint.ConstraintLayout>
